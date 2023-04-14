@@ -50,7 +50,7 @@ body{
     
    }
    .cards{
-    background-color: red;
+    
     display: flex;
     justify-content: space-between;
     width:90% ;
@@ -68,6 +68,29 @@ body{
     display: block;
     
    }
-   .
+   .summary{
+    background-color: white;
+    padding-left: 0;
+    padding-bottom: 0;
+   }
+    .c1{
+    color: hsl(0, 100%, 67%);
+
+   }
+   .c2{
+    color: hsl(39, 100%, 56%);
+
+   }
+   .c3{
+    color: hsl(166, 100%, 37%) ;
+   }
+   .c4{
+    color: hsl(234, 85%, 45%);
+   }
+   .attribution{
+    background-color:hsl(234, 85%, 45%); 
+    margin-top: 3em;
+    padding: 1em;
+   }
   }
   
