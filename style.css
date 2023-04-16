@@ -132,26 +132,41 @@ body{
     body{
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
     main{
         align-self: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: palegreen;
+        background-color: white;
         width: fit-content;
         gap: 2em;
+        border-radius: 2em;
+        padding: 1em 2em 1em 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
     .blue_background{
         border-radius: 2em 2em 2em 2em;
         padding: 2em;
+        height: 110%;
     }
     .downpart{
         padding: 0;
     }
     .cards{
         width: 100%;
+        gap: 3em;
+    }
+
+
+
+    .attribution{
+        width: 100%;
+       position: fixed;
+       bottom: 0;
     }
   }
   
