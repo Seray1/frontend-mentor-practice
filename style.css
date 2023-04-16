@@ -3,18 +3,27 @@
     padding: 0;
     margin: 0;
 }
-
+:root{
+    --primary-color:hsl(234, 85%, 45%);
+    --gray-color:#cccccc;
+}
 body{
     height: 100%;
     width: 100%;
+    font-family: Hanken Grotesk;
+    font-weight: 500, 700, 800;
 }
+
+
 /* Styles for devices with a maximum width of 480 pixels (smartphones) */
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) { */
+   
    .blue_background{
-    background-color: hsl(234, 85%, 45%);
+    background-color:var(--primary-color);
     height: 40%;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
+    /* border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em; */
+    border-radius: 0 0 2em 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,11 +31,18 @@ body{
     gap: 2em;
     padding: 2em 0 2em 0;
    }
-   .result{
-    color: whitesmoke;
+   .blue_background p{
+    color:var(--gray-color);
    }
+   .result{
+    color: var(--gray-color);
+   }
+   .great{
+    color: white;
+   }
+
    .round{
-    background-color:pink;
+    background-color:rgba(0, 0, 0, 0.204);
     padding: 3em;
     border-radius: 50%;
     display: flex;
@@ -39,7 +55,7 @@ body{
     color: white;
    }
    .round p{
-   color:whitesmoke ;
+   color:var(--gray-color);
    }
    .downpart{
     display: flex;
@@ -58,8 +74,14 @@ body{
     border-radius: 1em;
     padding: 1em;
    }
+   .cards b{
+    color: black;
+   }
+   .cards .dim{
+    color: rgba(0, 0, 0, 0.426);
+   }
    .continue{
-    background-color: hsl(252, 100%, 67%);
+    background-color: #343d5a;
     color: white;
     text-align: center;
     padding: 0.5em;
@@ -68,6 +90,9 @@ body{
     display: block;
     
    }
+   .continue:hover{
+    background-color:var(--primary-color) ;
+   }
    .summary{
     background-color: white;
     padding-left: 0;
@@ -75,22 +100,59 @@ body{
    }
     .c1{
     color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.114);
 
    }
    .c2{
     color: hsl(39, 100%, 56%);
+    background-color:hsl(39, 100%, 56%, 0.114) ;
 
    }
    .c3{
     color: hsl(166, 100%, 37%) ;
+    background-color:hsl(166, 100%, 37%, 0.114) ;
    }
    .c4{
     color: hsl(234, 85%, 45%);
+    background-color:hsla(234, 85%, 45%, 0.114) ;
    }
    .attribution{
-    background-color:hsl(234, 85%, 45%); 
+    background-color:var(--primary-color); 
     margin-top: 3em;
     padding: 1em;
+    color: white;
    }
+   .attribution a{
+    color: pink;
+    text-decoration: none;
+   }
+  /* } */
+
+  @media only screen and (min-width: 481px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    main{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: palegreen;
+        width: fit-content;
+        gap: 2em;
+    }
+    .blue_background{
+        border-radius: 2em 2em 2em 2em;
+        padding: 2em;
+    }
+    .downpart{
+        padding: 0;
+    }
+    .cards{
+        width: 100%;
+    }
   }
+  
   
